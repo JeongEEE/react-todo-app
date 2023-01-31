@@ -14,6 +14,8 @@ export default function App() {
   const handleSubmit = (e) => {
     e.preventDefault(); // form안에 input을 전송할때 페이지 리로드를 막아줌
 
+		if(value === '') return;
+
     let newTodo = {
       id: Date.now(),
       title: value,
